@@ -223,7 +223,7 @@ class VideoAnimator():
             frm.thumbnail((400, 400))
             frame = np.array(frm)
         else:
-            frame = img
+            frame = np.array(img)
 
         if not aligned:
             frame = self.preprocess_img(frame)
